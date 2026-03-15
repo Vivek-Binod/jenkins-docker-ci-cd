@@ -4,10 +4,10 @@ pipeline {
     stages {
 
         stage('Checkout Code') {
-            steps {
-                git 'https://github.com/Vivek-Binod/jenkins-docker-ci-cd'
-            }
-        }
+    steps {
+        git branch: 'main', url: 'https://github.com/Vivek-Binod/jenkins-docker-ci-cd'
+    }
+}
 
         stage('Build Docker Image') {
             steps {
